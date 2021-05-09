@@ -1,0 +1,18 @@
+.container {
+    margin: auto;
+    background-color: #eee;
+    font-family: 'Lato', sans-serif;
+    max-width: 1000px;
+    text-align: center;
+    line-height: 1.5;
+    padding: 0 20px;
+}
+
+.newColor {
+    background-color: #eee;
+    background-color: #00ffff;
+}
+
+.hidden {
+    display: none;
+}
