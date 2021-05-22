@@ -8,4 +8,4 @@ https://lukasznp88.github.io/homepage/
 
 ## Opis
 
-Moja pierwsza strona/wizytówka w karierze Frontend Developera:)
+Moja pierwsza strona/wizytówka w karierze Frontend Developera :)
