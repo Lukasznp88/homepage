@@ -1,23 +1,36 @@
-console.log("Witam serdecznie wszystkich developerów, którzy tutaj zaglądają! :) ");
+{
+    const welcome = () => {
+        console.log("Witam serdecznie wszystkich developerów, którzy tutaj zaglądają! :) ");
+    }
 
-let hideHeadingButton = document.querySelector(".js--hideHeadingButton");
-let heading = document.querySelector(".section__heading");
+    const toggleBackground = () => {
+        const container = document.querySelector(".container");
+        const nextColorName = document.querySelector(".js--nextColorName");
+
+        container.classList.toggle("newColor");
+        nextColorName.innerText = container.classList.contains("newColor") ? "szary" : "turkusowy";
+    };
+
+    const onHideHeadingButtonClick = () => {
+        const hideHeadingButton = document.querySelector(".js--hideHeadingButton");
+        const heading = document.querySelector(".section__heading");
+
+        heading.classList.toggle("hidden");
+        hideHeadingButton.innerText = heading.classList.contains("hidden") ? "Pokaż nagłówek" : "Ukryj nagłówek";
+    };
+
+    const init = () => {
+
+        const changeBackgroundButton = document.querySelector(".js--changeBackgroundButton");
+        const hideHeadingButton = document.querySelector(".js--hideHeadingButton");
+        hideHeadingButton.addEventListener("click", onHideHeadingButtonClick);
+        changeBackgroundButton.addEventListener("click", toggleBackground);
+
+        welcome();
+
+    };
+
+    init();
 
 
-let changeBackgroundButton = document.querySelector(".js--changeBackgroundButton");
-let container = document.querySelector(".container");
-let nextColorName = document.querySelector(".js--nextColorName");
-
-hideHeadingButton.addEventListener("click", () => {
-    heading.classList.toggle("hidden");
-
-    hideHeadingButton.innerText = heading.classList.contains("hidden") ? "Pokaż nagłówek" : "Ukryj nagłówek";
-});
-
-changeBackgroundButton.addEventListener("click", () => {
-    container.classList.toggle("newColor");
-
-    nextColorName.innerText = container.classList.contains("newColor") ? "szary" : "turkusowy";
-});
-
-
+}
