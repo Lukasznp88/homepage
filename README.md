@@ -4,7 +4,7 @@
 
 ## Demo
 
-https://lukasznp88.github.io/homepage/
+[Homepage](https://lukasznp88.github.io/homepage/)
 
 ## Description
 
