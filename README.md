@@ -1,6 +1,6 @@
 # Łukasz Nozdryn-Płotnicki - my website
 
-![My Website](website.gif)
+![My Website](images/website.gif)
 
 ## Demo
 
